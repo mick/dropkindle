@@ -16,7 +16,7 @@ Redis (stores the auth... could easily be replaced)
 
 
 
-## Why you should not user this:
+## Why you should not use this:
 
 several reasons..
   I start this project with xAuth, it should be oAuth since I unless you plan to host this using SSL
