@@ -1,0 +1,12 @@
+body{ font-family:arial; font-size:14px; line-height:16px; }
+
+div#headline{ background:#f3f3f3; height: 60px; padding-top:10px; }
+div#headlogin{ float:right; margin-right:40px; }
+
+a{ color:#ACE; text-decoration:none; }
+a:hover{ text-decoration:underline; }
+
+
+div#logo{ font-size:20px; float:left; margin-left:40px;}
+div#logo span{ font-size:12px; }
+div#content{ padding-top:30px; width:900px; margin:auto; }

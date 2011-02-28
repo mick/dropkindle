@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ static_url("reset.css") }}" />
+    <link rel="stylesheet" type="text/css" href="{{ static_url("style.css") }}" />
+  </head>
+  <body>
+
+    <div id="headline">
+      <div id="logo"> Drop Kindle <span>(really dont, just use this to transfer pdfs from dropbox to your kindle)</span></div>
+      <div id="headlogin">
+      </div>
+    </div>
+    <div id="page">
+      <div id="content">
+        <h3>Your files</h3>
+
+{% for item in contents %}
+  {% if item['is_dir'] == False %}
+    <div><a href="/file{{ item['path'] }}" >{{ item['path'] }}</a>, {{ item['size'] }}</div>
+  {% end %}
+{% end %}
+
+      </div>
+    </div>
+
+  </body>
+   </html>

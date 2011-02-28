@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ static_url("reset.css") }}" />
+    <link rel="stylesheet" type="text/css" href="{{ static_url("style.css") }}" />
+  </head>
+  <body>
+
+    <div id="headline">
+      <div id="logo"> Drop Kindle <span>(really dont, just use this to transfer pdfs from dropbox to your kindle)</span></div>
+      <div id="headlogin">
+        <form action="/login" method="POST">
+          <input name="redirect" type="hidden" />
+          <input name="username" type="text" class="inputbox" />
+          <input name="password" type="password" class="inputbox" />
+          <input type="submit" value="Login" />
+        </from>
+      </div>
+    </div>
+    <div id="page">
+      <div id="content">
+        This will conveniently list all of the pdf files in a folder named  "Kindle" in your dropbox.
+
+        Just enter your dropbox username / password to start. (No fear, we dont save your uername/password we use xAuth)
+
+      </div>
+    </div>
+<div id="footer"></div>
+
+
+  </body>
+</html>
