@@ -87,7 +87,6 @@ class DownloadFileHandler(BaseHandler):
         savedauth = DropKindleData.getuserauth(tornado.escape.xhtml_escape(self.current_user))
         token = oauth.OAuthToken(savedauth['key'], savedauth['secret'])
         dbox = dropbox.client.DropboxClient("api.dropbox.com", "api-content.dropbox.com", 80, auth, token)
-        print "path: /"+path
         res = dbox.get_file("dropbox", "/"+path)
         contents =  res.read()
         self.set_header("Content-Type", "application/octet-stream")
