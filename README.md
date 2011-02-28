@@ -7,7 +7,7 @@ them using the web browser on your kindle and read them there.
 
 
 
-==Requirements:
+## Requirements:
 
 
 Toranado web http://www.tornadoweb.org/
@@ -16,7 +16,7 @@ Redis (stores the auth... could easily be replaced)
 
 
 
-==Why you should not user this:
+## Why you should not user this:
 
 several reasons..
   I start this project with xAuth, it should be oAuth since I unless you plan to host this using SSL
